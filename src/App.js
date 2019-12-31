@@ -22,7 +22,7 @@ class App extends Component {
         movie.title_english
       }
       poster = {
-        movie.medium_cover_image
+        movie.small_cover_image
       }
       key = {
         movie.id
@@ -54,8 +54,9 @@ class App extends Component {
   }
 
   render() {
+    const { movies } = this.state;
     return ( 
-      <div className = "App" > {
+      <div className = {movies ? "App" : "App--loading"} > {
         this.state.movies ? this._rendermovies() : 'Loading'
       } 
       </div>
