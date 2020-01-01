@@ -22,7 +22,7 @@ class App extends Component {
         movie.title_english
       }
       poster = {
-        movie.small_cover_image
+        movie.medium_cover_image
       }
       key = {
         movie.id
