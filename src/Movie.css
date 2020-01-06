@@ -1,6 +1,6 @@
 .Movie {
     background-color: white;
-    widows: 40%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -25,6 +25,12 @@
 .Movie h1 {
     font-size: 20px;
     font-weight: 600;
+}
+
+.Movie .Movie__Genres {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .Movie__Genres .Movie__Genre {
